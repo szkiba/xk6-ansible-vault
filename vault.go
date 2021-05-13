@@ -25,7 +25,7 @@ package toml
 import (
 	"context"
 
-	"github.com/loadimpact/k6/js/modules"
+	"go.k6.io/k6/js/modules"
 	vault "github.com/sosedoff/ansible-vault-go"
 )
 
