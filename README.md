@@ -6,7 +6,7 @@ The vault password can be pass as environment variable when test run.
 
 The underlying implementation is https://github.com/sosedoff/ansible-vault-go
 
-Built for [k6](https://go.k6.io/k6) using [xk6](https://github.com/k6io/xk6).
+Built for [k6](https://go.k6.io/k6) using [xk6](https://github.com/grafana/xk6).
 
 ## Usage
 
@@ -40,7 +40,7 @@ Then:
 
 1. Install `xk6`:
   ```bash
-  $ go install github.com/k6io/xk6/cmd/xk6@latest
+  $ go install go.k6.io/xk6/cmd/xk6@latest
   ```
 
 2. Build the binary:
