@@ -23,10 +23,8 @@
 package toml
 
 import (
-	"context"
-
-	"go.k6.io/k6/js/modules"
 	vault "github.com/sosedoff/ansible-vault-go"
+	"go.k6.io/k6/js/modules"
 )
 
 // Register the extensions on module initialization.
@@ -40,10 +38,10 @@ func New() *Module {
 	return &Module{}
 }
 
-func (m *Module) Encrypt(ctx context.Context, text, password string) (string, error) {
+func (m *Module) Encrypt(text, password string) (string, error) {
 	return vault.Encrypt(text, password)
 }
 
-func (m *Module) Decrypt(ctx context.Context, ciphertext, password string) (string, error) {
+func (m *Module) Decrypt(ciphertext, password string) (string, error) {
 	return vault.Decrypt(ciphertext, password)
 }
